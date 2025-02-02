@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Education Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Multilingual Education Chatbot</h1>
+        <p>Select your language and subject to start learning.</p>
+    </header>
+    
+    <section>
+        <label for="language">Choose Your Language:</label>
+        <select id="language">
+            <option value="">--Select--</option>
+            <option value="chatbot.html?lang=spanish">Spanish</option>
+            <option value="chatbot.html?lang=french">French</option>
+            <option value="chatbot.html?lang=swahili">Swahili</option>
+            <option value="chatbot.html?lang=endangered">Endangered Languages</option>
+        </select>
+        
+        <label for="subject">Choose a Subject:</label>
+        <select id="subject">
+            <option value="">--Select--</option>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+        </select>
+        
+        <button onclick="startChatbot()">Start Learning</button>
+    </section>
+
+    <section>
+        <h2><a href="preservation.html">Language Preservation Efforts</a></h2>
+    </section>
+</body>
+</html>
