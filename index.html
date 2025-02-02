@@ -9,33 +9,39 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Multilingual Education Chatbot</h1>
-        <p>Select your language and subject to start learning.</p>
+        <h1>Multilingual Education Chatbot</h1>
+        <p>Breaking barriers through language and technology.</p>
     </header>
     
-    <section>
-        <label for="language">Choose Your Language:</label>
-        <select id="language">
-            <option value="">--Select--</option>
-            <option value="chatbot.html?lang=spanish">Spanish</option>
-            <option value="chatbot.html?lang=french">French</option>
-            <option value="chatbot.html?lang=swahili">Swahili</option>
-            <option value="chatbot.html?lang=endangered">Endangered Languages</option>
-        </select>
+    <main>
+        <section class="selection-container">
+            <div class="dropdown-container">
+                <label for="language">Choose Your Language:</label>
+                <select id="language">
+                    <option value="">--Select--</option>
+                    <option value="chatbot.html?lang=spanish">Spanish</option>
+                    <option value="chatbot.html?lang=french">French</option>
+                    <option value="chatbot.html?lang=swahili">Swahili</option>
+                    <option value="chatbot.html?lang=endangered">Endangered Languages</option>
+                </select>
+            </div>
+            
+            <div class="dropdown-container">
+                <label for="subject">Choose a Subject:</label>
+                <select id="subject">
+                    <option value="">--Select--</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                </select>
+            </div>
+        </section>
         
-        <label for="subject">Choose a Subject:</label>
-        <select id="subject">
-            <option value="">--Select--</option>
-            <option value="math">Math</option>
-            <option value="science">Science</option>
-            <option value="history">History</option>
-        </select>
-        
-        <button onclick="startChatbot()">Start Learning</button>
-    </section>
+        <button class="start-button" onclick="startChatbot()">Start Learning</button>
+    </main>
 
-    <section>
+    <footer>
         <h2><a href="preservation.html">Language Preservation Efforts</a></h2>
-    </section>
+    </footer>
 </body>
 </html>
